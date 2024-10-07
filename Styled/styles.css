@@ -6,8 +6,8 @@
 }
 .and {
     font-family: "Istok Web";
-    font-size: 18px;
-    line-height: 23px;
+    font-size: 117%;
+    line-height: 1em;
 }
 :root {
     --bgcolor: #282012;
@@ -23,59 +23,60 @@ body {
     color: white;
 }
 
-.topnav li {
-
+.topnav ul li {
+    justify-content: center;
+    width: 33.33%;
+    font-size: max(1vw, 10%);
 }
-.topnav a {
 
-}
+
 .topnav ul {
     display: flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    font-size: 16px;
-    justify-content: space-around;
     align-items: center;
-    align-content: center;
+    width: 100%;
+    min-width: 33.33vw;
+    margin-bottom: 8%;
+    line-height: .7em;
+    height: 95%;
+
 }
 
 .topnav li a {
-    display: inline-block;
     color: white;
-    text-align: center;
-    padding: 16px;
     text-decoration: none;
-    line-height: 23px;
+
 }
 
-
 .topnav img {
-    width: 180px;
-    height: 90px;
+    height: 100%;
     justify-content: flex-start;
+    margin-left: 10%;
+    margin-bottom: 10%;
 }
 
 .topnav {
     display: flex;
-    width: 100%;
-    height: 100px;
+    width: 100vw;
+    height: max(5vh, 10vh);;
     background-color: rgb(83, 52, 52);
     justify-content: space-between;
-    box-shadow: 0px 1px 4px black;
+    box-shadow: 0 .2em .5em black;
+    align-items: center;
 }
 
 .navbox {
-    margin: 5px;
+    margin: .2%;
     width: 33.33%;
     height: 90%;
-    border: 5px;
-    border-color: black;
+    
 }
-
-#logo img {
-    margin-left: 10%;
+#rightlinks.navbox a {
+    align-items: center;
+    justify-content: center;
 }
 
 #home {
@@ -91,18 +92,15 @@ body {
     border: 15px;
     padding: 0.2em 0.7em;
     align-items: center;
-    line-height:26px;
+    line-height: 1em;
     color: white;
     text-decoration: none;
-    font-size: 26px;
+    font-size: max(2vw, 4vw);
+    
 }
 
 #rightlinks {
     display: flex;
-    font-size: 16px;
-    align-content: center;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    
+    align-content: center;
 }
