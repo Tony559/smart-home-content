@@ -4,24 +4,79 @@
     font-family:'Inknut Antiqua', 'Arial Narrow', Arial, sans-serif;
     
 }
+
 .and {
     font-family: "Istok Web";
     font-size: 117%;
     line-height: 1em;
 }
+
 :root {
     --bgcolor: #282012;
     --color1: #DDB15F;
     --color2: #E6B863;
     --color3: #BB9650;
     --color4: #775F33;
+    --thetext: #FFEFD2;
 }
 
 body {
+    max-width: 1440px;
     margin: 0;
     background-color: var(--bgcolor);
     color: white;
+    margin-top: max(5vh, 10vh);
+    overflow-x: hidden;
 }
+
+.hero-container {
+    width: 100vw;
+    position: relative;
+
+}
+
+
+.heroimg {
+    width: 100%;
+    height: auto;
+}
+
+.searchbar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+}
+
+.searchbar-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px; /* Adjust as needed */
+}
+
+/* .heroimg {
+    width: 100vw;
+    height: auto;
+}
+
+.searchbar {
+    display: flex;
+    position: absolute;
+    height: 3.5em;
+    width: 25vw;
+    border-radius: 100vh;
+
+}
+
+.searchbar-input {
+    width: 25vw;
+    border-radius: 25vh;
+    height: 3.5em;
+} */
+
 
 .topnav ul li {
     justify-content: center;
@@ -46,26 +101,30 @@ body {
 }
 
 .topnav li a {
-    color: white;
+    color: var(--thetext);
     text-decoration: none;
 
 }
 
 .topnav img {
-    height: 100%;
+    height: max(90%, 1.1vw);
     justify-content: flex-start;
     margin-left: 10%;
     margin-bottom: 10%;
 }
 
 .topnav {
+    top: 0;
     display: flex;
+    position: fixed;
+    margin: 0;
     width: 100vw;
-    height: max(5vh, 10vh);;
-    background-color: rgb(83, 52, 52);
+    height: max(5vh, 10vh);
+    background-color: var(--bgcolor);
     justify-content: space-between;
     box-shadow: 0 .2em .5em black;
     align-items: center;
+    z-index: 500000;
 }
 
 .navbox {
@@ -95,7 +154,7 @@ body {
     line-height: 1em;
     color: white;
     text-decoration: none;
-    font-size: max(2vw, 4vw);
+    font-size: max(120%, 2.2vw);
     
 }
 
