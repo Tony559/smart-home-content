@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 * {
     font-family:'Inknut Antiqua', 'Arial Narrow', Arial, sans-serif;
-    
 }
 
 .and {
@@ -18,10 +17,11 @@
     --color3: #BB9650;
     --color4: #775F33;
     --thetext: #FFEFD2;
+    --cardheight: 28.125vw;
 }
 
 body {
-    max-width: 1440px;
+
     margin: 0;
     background-color: var(--bgcolor);
     color: white;
@@ -32,7 +32,9 @@ body {
 .hero-container {
     width: 100vw;
     position: relative;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -43,40 +45,19 @@ body {
 
 .searchbar {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    justify-content: center;
     display: flex;
-    align-items: center;
+    align-items: center; 
 }
 
 .searchbar-input {
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 200px; /* Adjust as needed */
-}
-
-/* .heroimg {
-    width: 100vw;
-    height: auto;
-}
-
-.searchbar {
-    display: flex;
-    position: absolute;
-    height: 3.5em;
-    width: 25vw;
-    border-radius: 100vh;
-
-}
-
-.searchbar-input {
-    width: 25vw;
     border-radius: 25vh;
+    width: 25vw; 
     height: 3.5em;
-} */
-
+    outline: none;
+}
 
 .topnav ul li {
     justify-content: center;
@@ -163,3 +144,36 @@ body {
     justify-content: center;
     align-content: center;
 }
+.content {
+    margin-top: 6vh;
+    width: 100%;
+}
+.card-container {
+    display: flex;
+    justify-content: space-around; 
+    width: 100%;
+}
+
+
+/* .card {
+    justify-content: center;
+    width: 28.125vw;
+    height: 30vw;
+    align-items: center;
+    /* height: (28.125/.623)vw; 
+    display: flex;
+    background-color: black;
+} 
+    */
+
+.card {
+    justify-content: center;
+    width: 28.125vw;
+    height: 35vw;
+    align-items: center;
+    display: flex;
+    background-color: var(--color4);
+    margin: 0 10px; 
+    box-shadow: 0 4px 4px black;
+}
+
