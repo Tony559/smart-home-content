@@ -27,8 +27,16 @@ body {
     color: white;
     margin-top: max(5vh, 10vh);
     overflow-x: hidden;
-}
+}   
+.herotxt {
+    font-size: max(120%, 2.2vw);
+    position: absolute;
+    display: flex;
+    text-align: center;
+    align-self: flex-start;
+    text-shadow: 0 4px 15px  black;
 
+}
 .hero-container {
     width: 100vw;
     position: relative;
@@ -114,18 +122,21 @@ body {
     height: 90%;
     
 }
+
 #rightlinks.navbox a {
     align-items: center;
     justify-content: center;
 }
 
-#home {
+/* This is home of navbox */
+#home { 
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
 }
 
+/* This is home link */
 .home {
     background-color: var(--color4);
     border-radius: 50px;
@@ -136,7 +147,6 @@ body {
     color: white;
     text-decoration: none;
     font-size: max(120%, 2.2vw);
-    
 }
 
 #rightlinks {
@@ -145,7 +155,7 @@ body {
     align-content: center;
 }
 .content {
-    margin-top: 6vh;
+    margin-top: 10vh;
     width: 100%;
 }
 .card-container {
@@ -169,11 +179,46 @@ body {
 .card {
     justify-content: center;
     width: 28.125vw;
-    height: 35vw;
+    height: 45.144vw;
     align-items: center;
-    display: flex;
     background-color: var(--color4);
     margin: 0 10px; 
     box-shadow: 0 4px 4px black;
 }
 
+.card img {
+    width: 28.125vw;
+    align-self: flex-start;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: max(50%, 1vw);
+    margin: 5%;
+    line-height: 2em;
+    padding: 0;
+    height: 58.5%;
+    position: relative;
+}
+
+.card-content h1{
+    font-size: max(70%, 1.5vw);
+    margin-top: 0;
+}
+
+.card-content a { 
+    align-self: flex-end;
+
+    color: white;
+    background-color: var(--bgcolor);
+    padding: 1em 1.3em;
+    text-decoration: none;
+    display: flex;
+    border-radius: 5%;
+    font-size: max(50%, 1vw);
+    position: absolute;
+    bottom: 2rem;
+    right: 1rem;
+}
