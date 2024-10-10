@@ -28,44 +28,6 @@ body {
     margin-top: max(5vh, 10vh);
     overflow-x: hidden;
 }   
-.herotxt {
-    font-size: max(120%, 2.2vw);
-    position: absolute;
-    display: flex;
-    text-align: center;
-    align-self: flex-start;
-    text-shadow: 0 4px 15px  black;
-
-}
-.hero-container {
-    width: 100vw;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.heroimg {
-    width: 100%;
-    height: auto;
-}
-
-.searchbar {
-    position: absolute;
-    justify-content: center;
-    display: flex;
-    align-items: center; 
-}
-
-.searchbar-input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 25vh;
-    width: 25vw; 
-    height: 3.5em;
-    outline: none;
-}
 
 .topnav ul li {
     justify-content: center;
@@ -154,7 +116,48 @@ body {
     justify-content: center;
     align-content: center;
 }
-.content {
+
+.herotxt {
+    font-size: max(120%, 2.2vw);
+    position: absolute;
+    display: flex;
+    text-align: center;
+    align-self: flex-start;
+    text-shadow: 0 4px 15px  black;
+
+}
+.hero-container {
+    width: 100vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.heroimg {
+    width: 100%;
+    height: auto;
+}
+
+.searchbar {
+    position: absolute;
+    justify-content: center;
+    display: flex;
+    align-items: center; 
+}
+
+.searchbar-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 25vh;
+    width: 25vw; 
+    height: 3.5em;
+    outline: none;
+}
+
+
+main {
     margin-top: 10vh;
     width: 100%;
 }
@@ -177,10 +180,8 @@ body {
     */
 
 .card {
-    justify-content: center;
     width: 28.125vw;
     height: 45.144vw;
-    align-items: center;
     background-color: var(--color4);
     margin: 0 10px; 
     box-shadow: 0 4px 4px black;
@@ -194,31 +195,87 @@ body {
 .card-content {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     font-size: max(50%, 1vw);
     margin: 5%;
-    line-height: 2em;
+    line-height: 3em;
     padding: 0;
     height: 58.5%;
     position: relative;
+    text-shadow: 0 2px 2px black;
 }
 
 .card-content h1{
+
     font-size: max(70%, 1.5vw);
-    margin-top: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
 }
 
 .card-content a { 
     align-self: flex-end;
-
     color: white;
     background-color: var(--bgcolor);
     padding: 1em 1.3em;
     text-decoration: none;
     display: flex;
-    border-radius: 5%;
+    border-radius: 15px;
     font-size: max(50%, 1vw);
     position: absolute;
     bottom: 2rem;
     right: 1rem;
+}
+
+.goals {
+    margin: 2.2%;
+    justify-content: center;
+}
+
+.goals h2 {
+    text-align: center;
+}
+
+.bottom-nav {
+    bottom: 0;
+    display: flex;
+    margin: 0;
+    width: 100vw;
+    height: max(10vh, 20vh);
+    background-color: var(--color4);
+    justify-content: space-between;
+    box-shadow: 0 .2em .5em black;
+    align-items: center;
+
+}
+
+.bottom-nav section { 
+    margin: .2%;
+    width: 33.33%;
+    height: 90%;
+}
+
+.bottom-nav .nav-left {
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 2.2%;
+    align-items: space-between;
+}
+
+.bottom-nav .nav-left a {
+    
+    text-decoration: none;
+    color: white;
+    height: 1.2em;
+    width: 75%;
+    background-color: var(--bgcolor);
+
+}
+
+.bottom-nav .nav-mid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
